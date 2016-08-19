@@ -1,20 +1,22 @@
 <!DOCTYPE html>
-<html >
-	<head>
-		<title>OMDB Movie Search</title>
-		<link rel="stylesheet" href="css/main.css">
-	</head>
-	<body ng-app="app">
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My AngularJS App</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
 
-		<input type="text" placeholder="Search for movie" ng-model="search"/>
-		<h1>{{search}}</h1>
+  <input type="text" placeholder="Search for movie" ng-model="search"/>
+  {{search}}
 
-
-
-
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
-	<script src="app.js" type="text/javascript"/>
-	<!--<script src="js/main.js" type="text/javascript"/>
-	<script src="services/move-service.js" type="text/javascript"/> -->
-	</body>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+  <script src="app.js"></script>
+</body>
 </html>
